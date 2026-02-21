@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile St. Nur Melinda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-bg: #0a0a0c;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-color: #e99dd6; /* Ungu seperti di gambar */
+            --text-main: #ffffff;
+            --text-dim: #a1a1aa;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: pink;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 84%;
+            z-index: 1000;
+        }
+
+        .logo { font-weight: 700; font-size: 1.5rem; }
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .nav-links a:hover { color: var(--text-main); }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 150px 8% 80px;
+            min-height: 80vh;
+            color: pink;
+        }
+
+        .hero-content { max-width: 600px; }
+        
+        .badge {
+            background: var(--card-bg);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        h1 { font-size: 3.5rem; margin: 10px 0; }
+        .description {
+            color: var(--text-dim);
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons button {
+            padding: 12px 25px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-primary { background: var(--text-main); color:pink; }
+        .btn-secondary { background: var(--card-bg); color: white; border: 1px solid rgba(255,255,255,0.1); }
+
+        /* Card Foto Profile */
+        .profile-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1), rgb(138, 131, 131));
+            padding: 20px;
+            border-radius: 24px;
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 20px 40px rgb(224, 138, 210);
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 18px;
+            
+        }
+
+        /* About Section (Gambar Kedua) */
+        .about-section {
+            padding: 80px 8%;
+        }
+
+        .about-container {
+            background: rgba(223, 150, 193, 0.03);
+            border-radius: 30px;
+            border: 1px solid var(--accent-color); /* Glow border ungu */
+            padding: 50px;
+            display: flex;
+            gap: 50px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.1);
+        }
+
+        .about-text h2 { font-size: 2rem; margin-bottom: 20px; }
+        
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-item h3 { font-size: 2rem; margin: 0; color: var(--text-main); }
+        .stat-item p { color: var(--text-dim); font-size: 0.8rem; margin: 5px 0; }
+
+        /* Animasi Sederhana */
+        .fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+style>
+img {
+  border: 1px solid #e72fbf;
+  border-radius: 50px;
+  padding: 100px;
+  width: 500px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgb(219, 115, 167);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Personal Profile</div>
+        
+    </nav>
+
+    <section class="hero fade-in">
+        <div class="hero-content">
+            <div class="badge">"Avoid or just undertake it"</div>
+            <h1>Hi I'm St. Nur Melinda</h1>
+            <p class="description">
+                Pengembang aplikasi dan web berbasis modern. mengintegrasikan ai dan mechine learning untuk kenciptakan inovasi yang bermanfaat
+            </p>
+            <div class="cta-buttons">
+                <button class="btn-secondary">Explore My Projects</button>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="c:\Users\user\OneDrive\Pictures\meli.JPG" class="profile-img">
+            <h3>St. Nur Melinda</h3>
+            <p style="color: var(--text-dim); font-size: 0.8rem;">19 Tahun</p>
+            <button class="btn-secondary" style="width: 100%; margin-top: 10px;">Web Developer</button>
+        </div>
+    </section>
+
+    <section class="about-section fade-in" style="animation-delay: 0.5s;">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p class="description">
+                    I'm Meli, I was born in Mamuju, I study at one of the private universities in Mamuju, namely Unika. My hobbies are playing volleyball in the afternoon or running. I really like cats, my favorite food is fried chicken. And I really like taro drinks. One more thing, I really like tulips.
+                </p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>2026</h3>
+                        <p>Years Old</p>
+                    </div>
+                
+                </div>
+                <p style="margin-top: 30px; font-style: italic; font-size: 0.8rem; color: var(--text-dim);">
+                    Working with heart, creating with mind.
+                </p>
+            </div>
+            
+            <div style="flex-shrink: 0;">
+                <img src="c:\Users\user\OneDrive\Pictures\e693139c-994e-40d0-8372-18f1af47017e.jpg" style="width: 200px; height: 300px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);">
+            </div>
+        </div>
+
+    <style>
+    /* CSS ini dirancang agar tidak mengganggu elemen lain (Scoped) */
+    .my-portfolio-section {
+        background-color: #0f0f0f; /* Warna gelap sesuai gambar */
+        color: #ffffff;
+        padding: 60px 20px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+
+    .my-portfolio-section h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .my-portfolio-section p.desc {
+        color: #a0a0a0;
+        max-width: 700px;
+        margin: 0 auto 50px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Card Style dengan Glow Effect */
+    .project-card {
+        background: #161616;
+        border-radius: 12px;
+        padding: 15px;
+        text-align: left;
+        border: 1.5px solid #333;
+        transition: all 0.3s ease;
+    }
+
+    /* Hover Effect: Glow warna biru seperti di gambar */
+    .project-card:hover {
+        transform: translateY(-8px);
+        border-color: #4facfe; 
+        box-shadow: 0px 0px 20px rgba(79, 172, 254, 0.3);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 180px;
+        background: #252525;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        object-fit: cover;
+    }
+
+    .project-info h3 {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+    }
+
+    .project-info p {
+        font-size: 13px;
+        color: #888;
+        margin: 0;
+    }
+</style>
+
+<section class="my-portfolio-section">
+    <h2>High School Story</h2>
+    <p class="desc">Sma Negri 2 Mamuju.</p>
+
+    <div class="project-container">
+        
+<div class="project-card">
+    <img src="c:\Users\user\OneDrive\Pictures\SAYA\WhatsApp Image 2026-02-21 at 16.03.54.jpeg" alt="Project 1" class="project-image">
+    
+    <div class="project-info">
+        <h3>Lapangan Ahmad Kiran Mamuju</h3>
+        <p>2022</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="c:\Users\user\OneDrive\Pictures\SAYA\WhatsApp Image 2026-02-21 at 18.13.56.jpeg" alt="Project 1" class="project-image">
+    
+    <div class="project-info">
+        <h3>Palembang</h3>
+        <p>2022</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="c:\Users\user\OneDrive\Pictures\SAYA\WhatsApp Image 2026-02-21 at 18.14.23.jpeg" alt="Project 1" class="project-image">
+    
+    <div class="project-info">
+        <h3>Sma Negri 2 Mamuju</h3>
+        <p>2024</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
